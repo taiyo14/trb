@@ -12,7 +12,16 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [8080]
+	"forwardPorts": [
+		4321
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"astro-build.astro-vscode"
+			]
+		}
+	}
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
