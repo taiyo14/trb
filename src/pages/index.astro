@@ -14,21 +14,19 @@ import Link2 from "@/components/Link2.astro";
       <div id="bannercontent" class="mx-w-7xl mx-auto w-[90%]">
         <div class="p-[7rem_0_3rem_0] text-[1rem] min-h-[35rem]">
           <div>
-            <p class="text-white text-center text-[2.5rem] pt-4 mb-6">
+            <p
+              class="text-white text-center text-[2.5rem] pt-4 mb-6 font-merriweather"
+            >
               Bank with the people you know.
             </p>
-            <div
-              class="*:text-white text-center text-[1em] box-border mb-[1.5rem]"
-            >
-              <Link1 href="/" isBrown>Personal</Link1>
-              <Link1 href="/" isBrown>Business</Link1>
-              <Link1 href="/" isBrown>Mortgage</Link1>
-              <Link1 href="/" isBrown>Trust & Wealth</Link1>
-              <Link1 href="/" isBrown>Insurance</Link1>
-              <Link1 href="/" isBrown>Community</Link1>
-              <Link1 href="/" isBrown
-                >International Private Banking</Link1
-              >
+            <div class="text-center text-[1em] box-border mb-[1.5rem]">
+              <Link1 href="/">Personal</Link1>
+              <Link1 href="/">Business</Link1>
+              <Link1 href="/">Mortgage</Link1>
+              <Link1 href="/">Trust & Wealth</Link1>
+              <Link1 href="/">Insurance</Link1>
+              <Link1 href="/">Community</Link1>
+              <Link1 href="/">International Private Banking</Link1>
             </div>
           </div>
         </div>
@@ -39,56 +37,66 @@ import Link2 from "@/components/Link2.astro";
         <div id="col">
           <article id="post-12681">
             <div id="pl-12681">
-              <div id="pg-12681-0"></div>
-              <div id="pg-12681-1" class="mb-[3rem]">
-                <div
-                  class="pt-[3rem] flex flex-col flex-nowrap items-center justify-between"
-                >
-                  <div class="pgc-img">
-                    <img src="/family-reading-a-book-together-768x538.jpg" />
+              <div id="pg-12681-0">
+                <div>
+                  <div class="p-[1.5rem_0_1rem_0] bg-trbBlue">
+                    <div class="flex justify-center items-center text-white mx-auto">
+                      <i>[icon]</i>
+                      <span class="text-[2.3rem] font-merriweather align-">
+                        Apply Today
+                      </span>
+                      <Link1 href="/" class="!m-[0_0_0_1.5rem]">Personal Account</Link1>
+                      <Link1 href="/" class="!m-[0_0_0_1.5rem]">Personal Loan</Link1>
+                      <Link1 href="/" class="!m-[0_0_0_1.5rem]">Business Loan</Link1>
+                    </div>
                   </div>
-                  <div class="pgc-content">
-                    <div class="mx-auto w-[90%] max-w-7xl">
+                </div>
+              </div>
+              <div id="pg-12681-1" class="mb-[3rem]">
+                <div class="panel-container pt-[3rem] flex-col-reverse">
+                  <div>
+                    <div class="mx-auto w-[90%] md:max-w-xl">
                       <h2>Personal Banking</h2>
-                      <p class="">
+                      <p>
                         As one of the premier banks across the state of Texas,
                         Texas Regional Bank provides exceptional personal
                         banking products and services along with unmatched
                         customer service and experience. We invite you to
-                        <span class="s1">
+                        <span>
                           <b>
                             <i>Bank With the People You Know</i>
                           </b>
                         </span>
                         .
                       </p>
-                      <p>
+                      <p class="md:flex md:flex-wrap">
                         <Link2 href="/">Bank Accounts</Link2>
                         <Link2 href="/">Savings Accounts</Link2>
                         <Link2 href="/">Loans & Credit Cards</Link2>
                       </p>
                     </div>
                   </div>
+                  <div>
+                    <img src="/family-reading-a-book-together-768x538.jpg" />
+                  </div>
                 </div>
               </div>
               <div id="pg-12681-2" class="mb-[3rem]">
-                <div
-                  class="py-[2rem] flex flex-col flex-nowrap items-center justify-between"
-                >
-                  <div class="pgc-img">
+                <div class="panel-container py-[2rem] flex-col">
+                  <div>
                     <img src="/business-people-shaking-hands.jpg" />
                   </div>
-                  <div class="pgc-content">
-                    <div class="mx-auto w-[90%] max-w-7xl">
+                  <div>
+                    <div class="mx-auto w-[90%] md:max-w-xl">
                       <h2>Business Banking</h2>
-                      <p class="">
+                      <p>
                         At Texas Regional Bank, we build relationships through
                         loyalty, trust, and hard work. Our business banking
-                        products and services are designed to help your
-                        business succeed. We invite you to come and experience
-                        real Relationship Banking.
+                        products and services are designed to help your business
+                        succeed. We invite you to come and experience real
+                        Relationship Banking.
                       </p>
-                      <p>
+                      <p class="md:flex md:flex-wrap">
                         <Link2 href="/">Bank Accounts</Link2>
                         <Link2 href="/">Loans & Credit</Link2>
                         <Link2 href="/">Treasury Management</Link2>
@@ -99,19 +107,16 @@ import Link2 from "@/components/Link2.astro";
               </div>
               <div id="pg-12681-3" class="mb-[3rem]">
                 <div
-                  class="pt-[3rem] flex flex-col flex-nowrap items-center justify-between"
+                  class="panel-container pt-[3rem] flex-col-reverse"
                 >
-                  <div class="pgc-img">
-                    <img src="/handshake-with-lending-officer.jpg" />
-                  </div>
-                  <div class="pgc-content">
-                    <div class="mx-auto w-[90%] max-w-7xl">
+                  <div>
+                    <div class="mx-auto w-[90%] md:max-w-xl">
                       <h2>Mortgage</h2>
-                      <p class="">
+                      <p>
                         Your new home starts here. We&apos;re here to help you
                         find the right home loan.
                       </p>
-                      <p>
+                      <p class="md:flex md:flex-wrap">
                         <Link2 href="/">Purchase</Link2>
                         <Link2 href="/">Refinance</Link2>
                         &nbsp;
@@ -119,28 +124,31 @@ import Link2 from "@/components/Link2.astro";
                       </p>
                     </div>
                   </div>
+                  <div>
+                    <img src="/handshake-with-lending-officer.jpg" />
+                  </div>
                 </div>
               </div>
               <div id="pg-12681-4" class="mb-[3rem]">
                 <div
-                  class="py-[2rem] flex flex-col flex-nowrap items-center justify-between"
+                  class="panel-container py-[2rem] flex-col"
                 >
-                  <div class="pgc-img">
+                  <div>
                     <img src="/a-man-doing-calculations-at-his-desk.jpg" />
                   </div>
-                  <div class="pgc-content">
-                    <div class="mx-auto w-[90%] max-w-7xl">
+                  <div>
+                    <div class="mx-auto w-[90%] md:max-w-xl">
                       <h2>Trust &amp; Wealth Management</h2>
-                      <p class="">
-                        TRB Trust &amp; Wealth Management helps families,
-                        individuals and organizations analyze and achieve
-                        their financial goals by providing significant
-                        strategies that are personalized to address specific
-                        objectives, goals or concerns. Our team’s boutique
-                        approach offers a premier client experience that
-                        ensures informed peace of mind.
-                      </p>
                       <p>
+                        TRB Trust &amp; Wealth Management helps families,
+                        individuals and organizations analyze and achieve their
+                        financial goals by providing significant strategies that
+                        are personalized to address specific objectives, goals
+                        or concerns. Our team’s boutique approach offers a
+                        premier client experience that ensures informed peace of
+                        mind.
+                      </p>
+                      <p class="md:flex md:flex-wrap">
                         <Link2 href="/">Learn More</Link2>
                       </p>
                     </div>
@@ -148,32 +156,30 @@ import Link2 from "@/components/Link2.astro";
                 </div>
               </div>
               <div id="pg-12681-5" class="mb-[3rem]">
-                <div
-                  class="pt-[3rem] flex flex-col flex-nowrap items-center justify-between"
-                >
-                  <div class="pgc-img">
-                    <img src="/community-home.jpg" />
-                  </div>
-                  <div class="pgc-content">
-                    <div class="mx-auto w-[90%] max-w-7xl">
+                <div class="panel-container pt-[3rem] flex-col-reverse">
+                  <div>
+                    <div class="mx-auto w-[90%] md:max-w-xl">
                       <h2>Community</h2>
-                      <p class="">
-                        "We take pride in contributing our time and resources
-                        to make our communities a great place to live and
-                        work. We are successful when our communities are
-                        successful. It's our mission to be the "
+                      <p>
+                        "We take pride in contributing our time and resources to
+                        make our communities a great place to live and work. We
+                        are successful when our communities are successful. It's
+                        our mission to be the "
                         <em>People You Know</em>
                         " in the communities we serve."
                       </p>
-                      <p>
+                      <p class="md:flex md:flex-wrap">
                         <Link2 href="/">TRB in the Community</Link2>
                       </p>
                     </div>
                   </div>
+                  <div>
+                    <img src="/community-home.jpg" />
+                  </div>
                 </div>
               </div>
-              <div id="pg-12681-6">
-                <div id="home_blog" class="py-[1rem]">
+              <div class="md:grid md:grid-cols-2 md:justify-items-center">
+                <div class="py-[1rem]">
                   <div id="pgc-header">
                     <div>
                       <div>
@@ -182,10 +188,10 @@ import Link2 from "@/components/Link2.astro";
                     </div>
                   </div>
                   <div id="pgc-card" class="h-[610px] w-[337px] border mx-auto">
-                    <div>Article preview carousels placeholder</div>
+                    <div>[Article_preview_carousels_placeholder]</div>
                   </div>
                 </div>
-                <div id="home_blog" class="py-[1rem]">
+                <div class="py-[1rem]">
                   <div id="pgc-header">
                     <div>
                       <div>
@@ -194,7 +200,7 @@ import Link2 from "@/components/Link2.astro";
                     </div>
                   </div>
                   <div id="pgc-card" class="h-[610px] w-[337px] border mx-auto">
-                    <div>Article preview carousels placeholder</div>
+                    <div>[Article_preview_carousels_placeholder]</div>
                   </div>
                 </div>
               </div>
@@ -210,8 +216,8 @@ import Link2 from "@/components/Link2.astro";
             <div>
               <aside>
                 <div>
-                  <ul class="list-none p-0 m-0 items-stretch content-stretch">
-                    <li class="list_lv0">
+                  <ul class="list-none p-0 m-0 items-stretch content-stretch md:flex md:flex-col md:flex-wrap md:max-h-[600px] lg:max-h-[440px]">
+                    <li class="li_lv0">
                       <a class="link_lv0">Personal Banking</a>
                       <ul class="ul_lv1">
                         <li class="li_lv1">
@@ -219,27 +225,24 @@ import Link2 from "@/components/Link2.astro";
                           <a href="/" class="link_lv1">Savings Accounts</a>
                           <a href="/" class="link_lv1">Home Loans</a>
                           <a href="/" class="link_lv1">Personal Loans</a>
-                          <a href="/" class="link_lv1"
-                            >Online & Mobile Tools</a
-                          >
+                          <a href="/" class="link_lv1">Online & Mobile Tools</a>
                           <a href="/" class="link_lv1">Zelle&reg;</a>
                         </li>
                       </ul>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Business Banking</a>
                       <ul class="ul_lv1">
                         <li class="li_lv1">
                           <a href="/" class="link_lv1">Bank Accounts</a>
                           <a href="/" class="link_lv1">Loans & Credit</a>
-                          <a href="/" class="link_lv1">Business Credit Card</a
-                          >
+                          <a href="/" class="link_lv1">Business Credit Card</a>
                           <a href="/" class="link_lv1">Treasury Management</a>
                           <a href="/" class="link_lv1">Merchant Services</a>
                         </li>
                       </ul>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Mortgage</a>
                       <ul class="ul_lv1">
                         <li class="li_lv1">
@@ -249,16 +252,16 @@ import Link2 from "@/components/Link2.astro";
                         </li>
                       </ul>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Agriculture</a>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Trust & Wealth Management</a>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Capital Markets</a>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Insurance</a>
                       <ul class="ul_lv1">
                         <li class="li_lv1">
@@ -267,7 +270,7 @@ import Link2 from "@/components/Link2.astro";
                         </li>
                       </ul>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">International Private Banking</a>
                       <ul class="ul_lv1">
                         <li class="li_lv1">
@@ -275,13 +278,13 @@ import Link2 from "@/components/Link2.astro";
                         </li>
                       </ul>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Public Sector</a>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Locations</a>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">About Us</a>
                       <ul class="ul_lv1">
                         <li class="li_lv1">
@@ -294,10 +297,10 @@ import Link2 from "@/components/Link2.astro";
                         </li>
                       </ul>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">ATM Locations</a>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Resources</a>
                       <ul class="ul_lv1">
                         <li class="li_lv1">
@@ -318,18 +321,18 @@ import Link2 from "@/components/Link2.astro";
                         </li>
                       </ul>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">News</a>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Community Involvement</a>
                     </li>
-                    <li class="list_lv0">
+                    <li class="li_lv0">
                       <a class="link_lv0">Contact Us</a>
                       <ul class="ul_lv1">
                         <li class="li_lv1">
                           <p
-                            class="!mx-auto !mb-0 p-0 max-w-[16rem] text-white"
+                            class="!mx-auto !mb-0 p-0 max-w-[16rem] text-white md:!mx-0"
                           >
                             Routing Number: 114917335
                           </p>
@@ -385,7 +388,7 @@ import Link2 from "@/components/Link2.astro";
                 </div>
               </div>
             </aside>
-            <aside>Search_placeholder</aside>
+            <aside>[Search_placeholder]</aside>
           </div>
         </div>
       </div>
@@ -394,8 +397,10 @@ import Link2 from "@/components/Link2.astro";
 </Layout>
 
 <style>
-  .panel-content-container {
-    margin-bottom: 3rem;
+  .panel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   #stretched {
     padding-top: 3rem;
@@ -433,7 +438,7 @@ import Link2 from "@/components/Link2.astro";
   #footer {
     background: var(--color-trbBlue);
   }
-  .list_lv0 {
+  .li_lv0 {
     max-width: 100%;
     text-align: center;
     margin: 1.5rem 0 0 0;
@@ -472,5 +477,24 @@ import Link2 from "@/components/Link2.astro";
     border-bottom: 1px solid #2b5882;
     transition: all 0.25s ease-in-out;
     text-decoration: none;
+  }
+
+  @media (min-width: 48rem) {
+    h2 {
+      padding-top: 0;
+    }
+
+    .panel-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: calc(var(--spacing) * 10);
+    }
+
+    .li_lv0 {
+      text-align: left;
+    }
+    .li_lv1 {
+      text-align: left;
+    }
   }
 </style>
