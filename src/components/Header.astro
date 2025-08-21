@@ -1,0 +1,47 @@
+---
+import Link1 from "./Link1.astro";
+---
+
+<div id="header-container">
+  <header class="max-w-7xl mx-auto flex justify-between">
+    <div>logo</div>
+    <div>
+      <Link1 href="/" isBrown>login</Link1>
+      <span>contact</span>
+      <span>locations</span>
+      <span>search</span>
+      <span>menu</span>
+    </div>
+  </header>
+</div>
+
+<style>
+  #header-container {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+  }
+  #header-container.scrolled {
+    background-color: #fff;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    color: #000;
+  }
+</style>
+
+<script>
+  const header = document.getElementById("header-container");
+
+  window.addEventListener("scroll", () => {
+    if (!header) return;
+
+    if (window.scrollY > 0) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>

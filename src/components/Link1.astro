@@ -1,0 +1,55 @@
+---
+interface Props {
+  href: string;
+  isBrown?: boolean;
+}
+const { href, isBrown } = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    "",
+    {
+      brown: isBrown,
+    },
+  ]}
+>
+  <slot />
+</a>
+
+<style>
+  a {
+    display: inline-block;
+    margin: 0 auto 0.5rem;
+    max-width: 75%;
+    min-width: 35%;
+    font-size: 1.17em;
+    background: var(--color-main-bg-color);
+    border: 2px solid var(--color-main-bg-color);
+    line-height: 0.9rem;
+    color: #fff;
+    text-align: center;
+
+    border-radius: 0.25rem;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0.6rem 0.75rem 0.7rem;
+    font-style: normal;
+    filter: none !important;
+    vertical-align: middle;
+    font-weight: bold;
+
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+  }
+
+  a.brown {
+    background: var(--color-trbBrown);
+    border: 2px solid var(--color-trbBrown);
+  }
+  a.brown:hover {
+    background: #327ebc;
+    border-color: #327ebc;
+  }
+</style>

@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --color-main-bg-color: #003c69;
+  --color-trbBrown: #8b7054;
+  --color-trbBlue: #063b6c;
+  --font-lato: "lato", sans-serif;
 }
