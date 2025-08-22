@@ -18,7 +18,7 @@ import Link2 from "@/components/Link2.astro";
               class="text-white text-center text-[2.5rem] pt-4 mb-6 font-merriweather"
             >
               Informed Peace of Mind &REG;
-              <br/>
+              <br />
               From The People You Know
             </p>
           </div>
@@ -33,14 +33,46 @@ import Link2 from "@/components/Link2.astro";
               <div id="pg-12681-0">
                 <div>
                   <div class="p-[1.5rem_0_1rem_0] bg-trbBlue">
-                    <div class="flex justify-center items-center text-white mx-auto">
+                    <div
+                      class="flex justify-center items-center text-white mx-auto"
+                    >
                       <i class="pr-4">[icon]</i>
                       <span class="text-[2.3rem] font-merriweather align-">
                         Get Started
                       </span>
-                      <Link1 href="/people" class="!m-[0_0_0_1.5rem]">Meet Our Team</Link1>
-                      <Link1 href="/" class="!m-[0_0_0_1.5rem]">Contact Us</Link1>
+                      <Link1 href="/people" class="!m-[0_0_0_1.5rem]"
+                        >Meet Our Team</Link1
+                      >
+                      <Link1 href="/" class="!m-[0_0_0_1.5rem]"
+                        >Contact Us</Link1
+                      >
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div id="introductions" class="max-w-[90%] mx-auto pt-[3rem]">
+                <h2 class="text-center mx-auto">Inroductions</h2>
+                <div class="panel-container gap-6 flex-col !items-baseline">
+                  <div>
+                    <div class="video-wrapper">
+                      <iframe src="https://www.youtube.com/embed/sONZKeCyLCw?si=YHUsqR15RK0NFSHj" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p>
+                      <span class="text-[1.5rem] leading-24">Informed Peace of Mind:</span>
+                      <br />
+                      Meet TRB Trust & Wealth President explain how clients can reach
+                      Informed Peace of Mind with TRB professional financial services
+                    </p>
+                  </div>
+                  <div>
+                    <div class="video-wrapper">
+                      <iframe src="https://www.youtube.com/embed/dPQn13bmmtc?si=TlwmDWyWR_jbA43F" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p>
+                      <span class="text-[1.5rem] leading-24">More Than Just Investing:</span>
+                      <br />
+                      Meet TRB Chief Investment Officer as he explains how investing is more about reaching your personal financial goals
+                    </p>
                   </div>
                 </div>
               </div>
@@ -98,9 +130,7 @@ import Link2 from "@/components/Link2.astro";
                 </div>
               </div>
               <div id="pg-12681-3" class="mb-[3rem]">
-                <div
-                  class="panel-container pt-[3rem] flex-col-reverse"
-                >
+                <div class="panel-container pt-[3rem] flex-col-reverse">
                   <div>
                     <div class="mx-auto w-[90%] md:max-w-xl">
                       <h2>Mortgage</h2>
@@ -122,9 +152,7 @@ import Link2 from "@/components/Link2.astro";
                 </div>
               </div>
               <div id="pg-12681-4" class="mb-[3rem]">
-                <div
-                  class="panel-container py-[2rem] flex-col"
-                >
+                <div class="panel-container py-[2rem] flex-col">
                   <div>
                     <img src="/a-man-doing-calculations-at-his-desk.jpg" />
                   </div>
@@ -208,7 +236,9 @@ import Link2 from "@/components/Link2.astro";
             <div>
               <aside>
                 <div>
-                  <ul class="list-none p-0 m-0 items-stretch content-stretch md:flex md:flex-col md:flex-wrap md:max-h-[600px] lg:max-h-[440px]">
+                  <ul
+                    class="list-none p-0 m-0 items-stretch content-stretch md:flex md:flex-col md:flex-wrap md:max-h-[600px] lg:max-h-[440px]"
+                  >
                     <li class="li_lv0">
                       <a class="link_lv0">Personal Banking</a>
                       <ul class="ul_lv1">
@@ -469,6 +499,21 @@ import Link2 from "@/components/Link2.astro";
     border-bottom: 1px solid #2b5882;
     transition: all 0.25s ease-in-out;
     text-decoration: none;
+  }
+
+  .video-wrapper {
+    position: relative;
+    padding-top: 50%;
+    padding-bottom: 20px;
+    height: 0;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   @media (min-width: 48rem) {
