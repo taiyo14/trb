@@ -5,12 +5,23 @@ import Link1 from "./Link1.astro";
 <div id="header-container">
   <header class="max-w-7xl mx-auto flex justify-between">
     <div>[logo]</div>
-    <div>
-      <Link1 href="/">login</Link1>
-      <span>[contact]</span>
-      <span>[locations]</span>
-      <span>[search]</span>
-      <span>[menu]</span>
+    <div class="md:flex md:gap-10">
+      <div class="hidden md:block">
+        <!-- TODO: dropdown on hover -->
+        <span>[Your Advisors]</span> 
+        <!-- The people you know -->
+        <span>[Our Services]</span>
+        <!-- Informed Peace of Mind -->
+        <span>[Resources]</span>
+        <span>[Contact]</span>
+      </div>
+      <div>
+        <Link1 href="/">login</Link1>
+        <span>[contact]</span>
+        <span>[locations]</span>
+        <span>[search]</span>
+        <span>[menu]</span>
+      </div>
     </div>
   </header>
 </div>
