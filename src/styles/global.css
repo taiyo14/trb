@@ -8,3 +8,7 @@
   --font-lato: "lato", sans-serif;
   --font-merriweather: "merriweather", helvetica, arial, sans-serif;
 }
+
+@view-transition {
+  navigation: auto;
+}
