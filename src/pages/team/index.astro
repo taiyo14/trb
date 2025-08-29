@@ -8,37 +8,135 @@ import Layout from "@/layouts/Layout.astro";
       <div class="text-center">
         <span
           class="text-trbBlue text-center text-[2.5rem] pt-4 mb-6 font-merriweather"
-          >Our People</span
+          ><b>Our People</b></span
         >
         <select id="team-selector">
           <option value="all" selected>All</option>
-          <option value="executive">executive</option>
-          <option value="wealth">wealth</option>
-          <option value="trust">trust</option>
-          <option value="operations">operations</option>
-          <option value="location">location</option>
+          <option value="executive">Executive Team</option>
+          <option value="wealth_strategist">Wealth Stategist</option>
+          <option value="wealth_management">Wealth Management Advisors</option>
+          <option value="trust_officer">Trust Officer</option>
+          <option value="operations">Operations and Administrative Staff</option>
         </select>
         <div id="executive">
-          <h2>Executive Team</h2>
+          <div class="pt-[5rem] pb-[1rem]">
+            <h2><b>Executive Team</b></h2>
+          </div>
           <div
-            class="grid mx-auto gap-2 w-[90%] max-w-6xl justify-center md:grid-cols-3"
+            class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
           >
-            <div class="card-personal shadow">
+            <div class="card-personal">
               <div>
-                <img src="/trb/people/robert-farris.png" />
+                <img
+                  src="/trb/people/Robert-Farris.jpg"
+                  class="object-contain w-full"
+                />
               </div>
               <div class="card-content">
-                <span class="card-title">Robert Farris, CFP&REG;</span>
-                <p>
-                  <i>Chairman</i>, TRB Trust & Wealth
-                  <br />
-                  Management
+                <h4><b>Robert Farris, CFP&REG;</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Chairman</i>, TRB Trust & Wealth Management
                   <br />
                   Harlingen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9569725436"> (956) 972-5436 </a>
                 </p>
               </div>
             </div>
-            <div class="card-personal shadow">
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Ben-Fedorko.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content relative">
+                <a href="/trb/team/ben" class="absolute right-1/2 top-0 translate-x-1/2"
+                  >bio</a
+                >
+                <h4><b>Ben A. Fedorko</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>President</i>, TRB Trust & Wealth Management
+                  <br />
+                  Houston, Texas
+                  <br />
+                  <a id="phone_num" href="tel:7134249558"> (713) 424-9558 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/John_tippit.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>John Tippit, IV</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>President</i>, Divisions
+                  <br />
+                  Harlingen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9569725422"> (956) 972-5422 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Trey-Willerson.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Trey Willerson, CFA</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Chief Investment Officer</i>, Divisions
+                  <br />
+                  Houston, Texas
+                  <br />
+                  <a id="phone_num" href="tel:8328109397"> (832) 810-9397 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Brian-Cafferky.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Brian Cafferky</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Chief Operting and Compliance Officer</i>
+                  <br />
+                  Houston, Texas
+                  <br />
+                  <a id="phone_num" href="tel:8328103565"> (832) 810-3565 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Josh-Flores.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Joshua R. Flores</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Chief Fiduciary Officer</i>
+                  <br />
+                  Houston, Texas
+                  <br />
+                  <a id="phone_num" href="tel:8328109357"> (832) 810-9357 </a>
+                </p>
+              </div>
+            </div>
+            <!-- <div class="card-personal shadow">
               <div class="relative">
                 <div class="absolute top-1/2 left-1/2" style="view-transition-name: img;"></div>
                 <img src="/trb/people/ben-a-fedorko.png"/>
@@ -56,41 +154,368 @@ import Layout from "@/layouts/Layout.astro";
                   [phone_number]
                 </p>
               </div>
-            </div>
-            <div class="card-personal shadow">
+            </div> -->
+          </div>
+        </div>
+        <div id="wealth_strategist">
+          <div class="pt-[5rem] pb-[1rem]">
+            <h2><b>Wealth Strategist</b></h2>
+          </div>
+          <div
+            class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
+          >
+            <div class="card-personal" style="grid-column-start: 2;">
               <div>
-                <img src="/trb/people/john-tippit.png" />
+                <img
+                  src="/trb/people/Tanya-Castro.jpg"
+                  class="object-contain w-full"
+                />
               </div>
               <div class="card-content">
-                <span class="card-title">John Tippit, IV</span>
-                <p>
-                  <i>President</i>, Devisions
+                <h4><b>Tanya T. Castro, CFP&REG;, AEP&REG;, CTFA</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Wealth Strategist</i>
                   <br />
-                  Harlingen, Texas
+                  Houston, Texas
                   <br />
-                  [phone_number]
+                  <a id="phone_num" href="tel:7134249564"> (713) 424-9564 </a>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div id="wealth">
-          <h2>Wealth Team</h2>
+        <div id="wealth_management">
+          <div class="pt-[5rem] pb-[1rem]">
+            <h2><b>Wealth Management Advisors</b></h2>
+          </div>
           <div
-            class="grid mx-auto gap-2 w-[90%] max-w-6xl justify-center md:grid-cols-3"
+            class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
           >
-            <div class="card-personal shadow">
+            <div class="card-personal">
               <div>
-                <img src="/trb/people/robert-farris.png" />
+                <img
+                  src="/trb/people/Rick-Garcia.jpg"
+                  class="object-contain w-full"
+                />
               </div>
               <div class="card-content">
-                <span class="card-title">John Doe&REG;</span>
-                <p>
-                  <i>Chairman</i>, TRB Trust & Wealth
+                <h4><b>Rick Garcia</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Wealth Management Advisor</i>
                   <br />
-                  Management
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9562176007"> (956) 217-6007 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Linda-Roberts.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Linda Roberts</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Wealth Management Advisor</i>
                   <br />
                   Harlingen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9562176029"> (956) 217-6029 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/JR-Stewart.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>JR Stewart</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Wealth Management Advisor</i>
+                  <br />
+                  Austin, Texas
+                  <br />
+                  <a id="phone_num" href="tel:7134249561"> (713) 424-9561 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Peyton-Stamper.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Peyton Stamper, CPA, CFP&REG;</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Wealth Management Advisor</i>
+                  <br />
+                  Houston, Texas
+                  <br />
+                  <a id="phone_num" href="tel:7134246630"> (713) 424-6630 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Michael-Baldermann.png"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Michael Baldermann</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Wealth Management Advisor</i>
+                  <br />
+                  Dallas, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9402976347"> (940) 297-6347 </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="trust_officer">
+          <div class="pt-[5rem] pb-[1rem]">
+            <h2><b>Trust Officer</b></h2>
+          </div>
+          <div
+            class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
+          >
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Hortencia-Villarreal.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Hortencia Villarreal, CTFA</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Senior Trust Officer</i>
+                  <br />
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9569725408"> (956) 972-5408 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/David-Estes.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>David Estes, CTFA, ATFA</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Senior Trust Officer</i>
+                  <br />
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9569725416"> (956) 972-5416 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Ruth-Lim.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Ruth Lim, ATFA</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Senior Trust Officer</i>
+                  <br />
+                  Houston, Texas
+                  <br />
+                  <a id="phone_num" href="tel:7134249478"> (713) 424-9478 </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid mx-auto gap-10 w-[90%] max-w-6xl justify-center sm:grid-cols-3 pt-10"
+          >
+            <div class="card-personal" style="grid-column-start: 2;">
+              <div>
+                <img
+                  src="/trb/people/Avery-Martin.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Avery Martin</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Trust Officer</i>
+                  <br />
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9567098575"> (956) 709-8575 </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="operations">
+          <div class="pt-[5rem] pb-[1rem]">
+            <h2><b>Operations and Administrative Staff</b></h2>
+          </div>
+          <div
+            class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
+          >
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Mark-Liserio.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Mark Liserio</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Retirement Planning Specialist</i>
+                  <br />
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9563514680"> (956) 351-4680 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Leo-Gomez.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Leonardo Gomez</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Trust Operations Senior Associate</i>
+                  <br />
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9563685350"> (956) 368-5350 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Samantha-Earnhardt.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Samantha Earnhardt</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Executive Assistant</i>
+                  <br />
+                  Houston, Texas
+                  <br />
+                  <a id="phone_num" href="tel:7134249562"> (713) 424-9562 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Jacob-Loredo.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Jacob Loredo</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Trust Operations Associate</i>
+                  <br />
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9569287303"> (956) 928-7303 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Gina-Reyes.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Gina Reyes</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Administrative Assistant</i>
+                  <br />
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9569725404"> (956) 972-5404 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Sandra-Moreno.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Sandra Moreno</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Senior Wealth Management Associate</i>
+                  <br />
+                  Harlingen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9562176028"> (956) 217-6028 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Salome-Garcia.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Salome Garcia</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Senior Wealth Management Associate</i>
+                  <br />
+                  McAllen, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9569725448"> (956) 972-5448 </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-personal">
+              <div>
+                <img
+                  src="/trb/people/Maria-Fernanda-Salinas.jpg"
+                  class="object-contain w-full"
+                />
+              </div>
+              <div class="card-content">
+                <h4><b>Maria Fernanda Salinas</b></h4>
+                <p class="mb-[0.7rem]">
+                  <i>Wealth Management Associate</i>
+                  <br />
+                  San Antonio, Texas
+                  <br />
+                  <a id="phone_num" href="tel:9569725424"> (956) 972-5424 </a>
                 </p>
               </div>
             </div>
@@ -114,16 +539,15 @@ import Layout from "@/layouts/Layout.astro";
 
   .card-personal {
     box-sizing: border-box;
-    display: grid;
     overflow: hidden;
-    border-radius: var(--radius-md);
-    max-width: fit-content;
+    box-shadow: 0px 0px 3px 5px #8ba2c51c;
+    border-radius: 6px;
   }
   .card-content {
     padding: 2rem 0 2rem 0;
   }
 
-  .card-title {
+  h4 {
     font-size: 1.5rem;
     line-height: 1.5;
     color: var(--color-trbBrown);
@@ -138,6 +562,15 @@ import Layout from "@/layouts/Layout.astro";
     all: revert;
     display: block;
     margin: 0 auto 0 auto;
+  }
+
+  #phone_num {
+    color: var(--color-trbBlue);
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+  }
+  #phone_num:hover {
+    color: var(--color-trbBrown);
   }
 </style>
 

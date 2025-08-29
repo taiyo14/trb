@@ -6,42 +6,58 @@ import Layout from "@/layouts/Layout.astro";
   <main>
     <a href="/trb/team">← Back</a>
     <div class="py-6 bg-white">
-      <div class="grid justify-center max-w-[90%] mx-auto">
-        <div>
-          <div class="max-w-fit mx-auto h-80" style="view-transition-name: img;">
-            <img src="/trb/people/ben-a-fedorko.png"/>
+      <div class="max-w-[90%] mx-auto">
+        <div class="grid justify-center">
+          <div class="flex justify-center">
+            <div class="h-96 mx-auto" style="view-transition-name: img;">
+              <img
+                src="/trb/people/Ben-Fedorko.jpg"
+                class="max-h-full max-w-full object-contain"
+              />
+            </div>
           </div>
+          <div class="pt-[3rem] pb-[1rem] text-center">
+            <h3>
+              <b>Ben A. Fredorko</b>
+            </h3>
+          </div>
+          <p class="mb-[0.7rem] text-center text-xl">
+            <i>President</i>, TRB Trust & Wealth Management
+            <br />
+            Houston, Texas
+            <br />
+            <a id="phone_num" href="tel:7134249558"> (713) 424-9558 </a>
+          </p>
+          <p class="max-w-2xl py-6 text-lg">
+            I am currently the President of the Trust & Wealth Management
+            Division at Texas Regional Bank, a privately held bank in Texas. At
+            TRB Trust & Wealth Management, we are focused on providing
+            comprehensive and customized solutions for high-net-worth clients.
+            The mission of our team is to deliver Informed Peace of Mind by
+            helping clients achieve their goals and protect their legacy, while
+            upholding the highest standards of integrity, professionalism, and
+            fiduciary responsibility.
+            <br />
+            <br />
+            Prior to joining Texas Regional Bank, I was a Senior Vice President and
+            Senior Fiduciary Officer at Northern Trust Corporation, where I managed
+            a portfolio of complex trust accounts, advised clients on personal finance
+            and wealth transfer strategies, and collaborated with internal and external
+            partners to deliver exceptional service. Before that I practiced law
+            at Bracewell LLP and Gray, Reed & McGraw LLP.
+            <br />
+            <br />
+            I am board certified in estate planning and probate and hold a J.D. from
+            South Texas College of Law and an undergraduate degree in Business Management
+            from Mays Business School at Texas A&M University.
+            <br />
+            <br />
+            When I am not in the office, you will typically find me enjoying time
+            with my wife and three young children, ideally in the mountains in Colorado,
+            or playing golf. We are active members at Memorial Drive Presbyterian
+            Church in Houston.
+          </p>
         </div>
-        <span class="card-title pt-6">Ben A. Fredorko</span>
-        <span class="text-center">[contact]</span>
-        <p class="max-w-2xl py-6">
-          I am currently the President of the Trust & Wealth Management Division
-          at Texas Regional Bank, a privately held bank in Texas. At TRB Trust &
-          Wealth Management, we are focused on providing comprehensive and
-          customized solutions for high-net-worth clients. The mission of our
-          team is to deliver Informed Peace of Mind by helping clients achieve
-          their goals and protect their legacy, while upholding the highest
-          standards of integrity, professionalism, and fiduciary responsibility.
-          <br />
-          <br />
-          Prior to joining Texas Regional Bank, I was a Senior Vice President and
-          Senior Fiduciary Officer at Northern Trust Corporation, where I managed
-          a portfolio of complex trust accounts, advised clients on personal finance
-          and wealth transfer strategies, and collaborated with internal and external
-          partners to deliver exceptional service. Before that I practiced law at
-          Bracewell LLP and Gray, Reed & McGraw LLP.
-          <br />
-          <br />
-          I am board certified in estate planning and probate and hold a J.D. from
-          South Texas College of Law and an undergraduate degree in Business Management
-          from Mays Business School at Texas A&M University.
-          <br />
-          <br />
-          When I am not in the office, you will typically find me enjoying time with
-          my wife and three young children, ideally in the mountains in Colorado,
-          or playing golf. We are active members at Memorial Drive Presbyterian Church
-          in Houston.
-        </p>
       </div>
     </div>
   </main>
@@ -53,5 +69,11 @@ import Layout from "@/layouts/Layout.astro";
     line-height: 1.5;
     color: var(--color-trbBrown);
     text-align: center;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+    line-height: 1.5;
+    color: var(--color-trbBrown);
   }
 </style>
