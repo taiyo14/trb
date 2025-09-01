@@ -1,33 +1,60 @@
 ---
 import Link1 from "./Link1.astro";
+import { Phone, MapPin, Search, Menu } from "@lucide/astro";
 ---
 
-<div id="header-container">
-  <header class="max-w-7xl mx-auto flex justify-between">
-    <div>[logo]</div>
-    <div class="md:flex md:gap-10">
-      <div class="hidden md:block">
-        <!-- TODO: dropdown on hover -->
-        <span>[Your Advisors]</span> 
-        <!-- The people you know -->
-        <span>[Our Services]</span>
-        <!-- Informed Peace of Mind -->
-        <span>[Resources]</span>
-        <span>[Contact]</span>
+<div id="header_container">
+  <header
+    class="w-[90%] max-w-[1280px] mx-auto mb-[1rem] flex justify-between pt-[0.75rem] relative"
+  >
+    <div>
+      <img id="logo_white" src="/trb/trust-white-1.png" />
+      <img id="logo_colored" src="/trb/trust-color.png" />
+    </div>
+    <div class="hidden lg:block absolute left-1/2 top-[30%] translate-x-[-50%]">
+      <div id="advisors" class="relative group inline-block">
+        <Link1 href="/trb/team" class="!max-w-[100%]">Your&nbsp;Advisors</Link1>
+        <div
+          class="hidden group-hover:block absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white text-black rounded shadow-lg px-3 py-1 whitespace-nowrap"
+        >
+          The people you know
+        </div>
       </div>
-      <div>
-        <Link1 href="/trb">login</Link1>
-        <span>[contact]</span>
-        <span>[locations]</span>
-        <span>[search]</span>
-        <span>[menu]</span>
+      <div id="advisors" class="relative group inline-block">
+        <Link1 href="/trb/team" class="!max-w-[100%]">Our&nbsp;Services</Link1>
+        <div
+          class="hidden group-hover:block absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white text-black rounded shadow-lg px-3 py-1 whitespace-nowrap"
+        >
+          Informed Peace of Mind 
+        </div>
       </div>
+      <Link1 href="/trb/"> Resources </Link1>
+      <Link1 href="/trb/"> Contact </Link1>
+    </div>
+    <div class="flex gap-4 items-center">
+      <Link1 href="/trb" class="!mb-0"> login </Link1>
+      <a href="/trb" class="lucide-icon">
+        <Phone />
+      </a>
+      <a href="/trb" class="lucide-icon">
+        <MapPin />
+      </a>
+      <a href="/trb" class="lucide-icon">
+        <Search />
+      </a>
+      <a href="/trb" class="lucide-icon">
+        <Menu />
+      </a>
     </div>
   </header>
 </div>
 
 <style>
-  #header-container {
+  #advisors:hover div {
+    display: block;
+  }
+
+  #header_container {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,23 +65,52 @@ import Link1 from "./Link1.astro";
     transition: all 0.5s ease-in-out;
     color: #fff;
   }
-  #header-container.scrolled {
+  #header_container.scrolled {
     background-color: #fff;
     box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
     color: #000;
   }
+  #logo_white {
+    display: block;
+    width: 265px;
+    height: 42px;
+  }
+  #logo_colored {
+    display: none;
+    width: 265px;
+    height: 42px;
+  }
+
+  #header_container.scrolled #logo_white {
+    display: none;
+  }
+
+  #header_container.scrolled #logo_colored {
+    display: block;
+  }
+
+  a.lucide-icon {
+    transition: stroke 0.5s ease-in-out;
+  }
+  #header_container a.lucide-icon svg {
+    stroke: #fff;
+  }
+  #header_container.scrolled a.lucide-icon svg {
+    stroke: var(--color-trbBrown);
+  }
+  #header_container a.lucide-icon:hover svg {
+    stroke: #327ebc;
+  }
 </style>
 
 <script>
-  const header = document.getElementById("header-container");
+  const header = document.getElementById("header_container");
 
   window.addEventListener("scroll", () => {
-    if (!header) return;
-
     if (window.scrollY > 0) {
-      header.classList.add("scrolled");
+      header?.classList.add("scrolled");
     } else {
-      header.classList.remove("scrolled");
+      header?.classList.remove("scrolled");
     }
   });
 </script>
