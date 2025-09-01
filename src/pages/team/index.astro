@@ -10,22 +10,45 @@ import Layout from "@/layouts/Layout.astro";
           class="text-trbBlue text-center text-[2.5rem] pt-4 mb-6 font-merriweather"
           ><b>Our People</b></span
         >
-        <select id="team-selector">
-          <option value="all" selected>All</option>
-          <option value="executive">Executive Team</option>
-          <option value="wealth_strategist">Wealth Stategist</option>
-          <option value="wealth_management">Wealth Management Advisors</option>
-          <option value="trust_officer">Trust Officer</option>
-          <option value="operations">Operations and Administrative Staff</option>
-        </select>
+        <div class="pt-[3rem] w-[90%] mx-auto">
+          <div class="grid grid-cols-[auto_1fr] gap-10 max-w-2xl mx-auto">
+            <span>Teams:</span>
+            <div class="flex gap-4 justify-start flex-wrap">
+              <button id="team_all">All</button>
+              <button id="team_executive">Executive Team</button>
+              <button id="team_wealth_strategist">Wealth Stategist</button>
+              <button id="team_wealth_management"
+                >Wealth Management Advisors</button
+              >
+              <button id="team_trust_officer">Trust Officer</button>
+              <button id="team_operations"
+                >Operations and Administrative Staff</button
+              >
+            </div>
+            <span>Cities:</span>
+            <div class="flex gap-4 justify-start flex-wrap">
+              <button id="city_all">All</button>
+              <button id="city_harlingen">Harlingen, Texas</button>
+              <button id="city_houston">Houston, Texas</button>
+              <button id="city_mcallen">McAllen, Texas</button>
+              <button id="city_austin">Austin, Texas</button>
+              <button id="city_dallas">Dallas, Texas</button>
+              <button id="city_san_antonio">San Antonio, Texas</button>
+            </div>
+          </div>
+        </div>
         <div id="executive">
-          <div class="pt-[5rem] pb-[1rem]">
+          <div class="pt-[3rem] pb-[1rem]">
             <h2><b>Executive Team</b></h2>
           </div>
           <div
             class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
           >
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="executive"
+              data-city="harlingen"
+            >
               <div>
                 <img
                   src="/trb/people/Robert-Farris.jpg"
@@ -43,7 +66,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="executive"
+              data-city="houston"
+            >
               <div>
                 <img
                   src="/trb/people/Ben-Fedorko.jpg"
@@ -51,8 +78,9 @@ import Layout from "@/layouts/Layout.astro";
                 />
               </div>
               <div class="card-content relative">
-                <a href="/trb/team/ben" class="absolute right-1/2 top-0 translate-x-1/2"
-                  >bio</a
+                <a
+                  href="/trb/team/ben"
+                  class="absolute right-1/2 top-0 translate-x-1/2">bio</a
                 >
                 <h4><b>Ben A. Fedorko</b></h4>
                 <p class="mb-[0.7rem]">
@@ -64,7 +92,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="executive"
+              data-city="harlingen"
+            >
               <div>
                 <img
                   src="/trb/people/John_tippit.jpg"
@@ -82,7 +114,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="executive"
+              data-city="houston"
+            >
               <div>
                 <img
                   src="/trb/people/Trey-Willerson.jpg"
@@ -100,7 +136,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="executive"
+              data-city="houston"
+            >
               <div>
                 <img
                   src="/trb/people/Brian-Cafferky.jpg"
@@ -118,7 +158,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="executive"
+              data-city="houston"
+            >
               <div>
                 <img
                   src="/trb/people/Josh-Flores.jpg"
@@ -164,7 +208,12 @@ import Layout from "@/layouts/Layout.astro";
           <div
             class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
           >
-            <div class="card-personal" style="grid-column-start: 2;">
+            <div
+              class="card-personal"
+              style="grid-column-start: 2;"
+              data-team="wealth_strategist"
+              data-city="houston"
+            >
               <div>
                 <img
                   src="/trb/people/Tanya-Castro.jpg"
@@ -191,7 +240,11 @@ import Layout from "@/layouts/Layout.astro";
           <div
             class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
           >
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="wealth_management"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/Rick-Garcia.jpg"
@@ -209,7 +262,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="wealth_management"
+              data-city="harlingen"
+            >
               <div>
                 <img
                   src="/trb/people/Linda-Roberts.jpg"
@@ -227,7 +284,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="wealth_management"
+              data-city="austin"
+            >
               <div>
                 <img
                   src="/trb/people/JR-Stewart.jpg"
@@ -245,7 +306,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="wealth_management"
+              data-city="houston"
+            >
               <div>
                 <img
                   src="/trb/people/Peyton-Stamper.jpg"
@@ -263,7 +328,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="wealth_management"
+              data-city="dallas"
+            >
               <div>
                 <img
                   src="/trb/people/Michael-Baldermann.png"
@@ -290,7 +359,11 @@ import Layout from "@/layouts/Layout.astro";
           <div
             class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
           >
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="trust_officer"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/Hortencia-Villarreal.jpg"
@@ -308,7 +381,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="trust_officer"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/David-Estes.jpg"
@@ -326,7 +403,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="trust_officer"
+              data-city="houston"
+            >
               <div>
                 <img
                   src="/trb/people/Ruth-Lim.jpg"
@@ -348,7 +429,12 @@ import Layout from "@/layouts/Layout.astro";
           <div
             class="grid mx-auto gap-10 w-[90%] max-w-6xl justify-center sm:grid-cols-3 pt-10"
           >
-            <div class="card-personal" style="grid-column-start: 2;">
+            <div
+              class="card-personal"
+              style="grid-column-start: 2;"
+              data-team="trust_officer"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/Avery-Martin.jpg"
@@ -375,7 +461,11 @@ import Layout from "@/layouts/Layout.astro";
           <div
             class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
           >
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="operations"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/Mark-Liserio.jpg"
@@ -393,7 +483,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="operations"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/Leo-Gomez.jpg"
@@ -411,7 +505,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="operations"
+              data-city="houston"
+            >
               <div>
                 <img
                   src="/trb/people/Samantha-Earnhardt.jpg"
@@ -429,7 +527,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="operations"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/Jacob-Loredo.jpg"
@@ -447,7 +549,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="operations"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/Gina-Reyes.jpg"
@@ -465,7 +571,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="operations"
+              data-city="harlingen"
+            >
               <div>
                 <img
                   src="/trb/people/Sandra-Moreno.jpg"
@@ -483,7 +593,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="operations"
+              data-city="mcallen"
+            >
               <div>
                 <img
                   src="/trb/people/Salome-Garcia.jpg"
@@ -501,7 +615,11 @@ import Layout from "@/layouts/Layout.astro";
                 </p>
               </div>
             </div>
-            <div class="card-personal">
+            <div
+              class="card-personal"
+              data-team="operations"
+              data-city="san_antonio"
+            >
               <div>
                 <img
                   src="/trb/people/Maria-Fernanda-Salinas.jpg"
@@ -564,6 +682,27 @@ import Layout from "@/layouts/Layout.astro";
     margin: 0 auto 0 auto;
   }
 
+  button {
+    all: revert;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.25rem 0.75rem;
+    transition: all 0.25s ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: var(--color-trbBlue);
+    color: white;
+  }
+
+  button.active {
+    background-color: var(--color-trbBlue);
+    border-color: var(--color-trbBlue);
+    border: 1px;
+    color: white;
+  }
+
   #phone_num {
     color: var(--color-trbBlue);
     text-decoration: none;
@@ -575,31 +714,77 @@ import Layout from "@/layouts/Layout.astro";
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const selector = document.getElementById(
-      "team-selector",
-    ) as HTMLSelectElement | null;
-    const teams: NodeListOf<HTMLElement> = document.querySelectorAll(
-      "#executive, #wealth_strategist, #wealth_management, #trust_officer, #operations",
-    );
+  document.addEventListener("DOMContentLoaded", () => {
+    let activeTeam: string = "all";
+    let activeCity: string = "all";
 
-    if (!selector) return;
+    const cards = document.querySelectorAll<HTMLElement>(".card-personal");
 
-    function updateTeams() {
-      const value = selector?.value;
-      teams.forEach((team) => {
-        if (value === "all" || team.id === value) {
-          team.style.display = "block";
-        } else {
-          team.style.display = "none";
-        }
+    function filterCards() {
+      cards.forEach((card: HTMLElement) => {
+        const team = card.dataset.team ?? "";
+        const city = card.dataset.city ?? "";
+
+        const teamMatch = activeTeam === "all" || team === activeTeam;
+        const cityMatch = activeCity === "all" || city === activeCity;
+
+        card.style.display = teamMatch && cityMatch ? "" : "none";
       });
+
+      // Section visibility logic
+      document
+        .querySelectorAll<HTMLElement>(
+          "#executive, #wealth_strategist, #wealth_management, #trust_officer, #operations",
+        )
+        .forEach((section) => {
+          const sectionId = section.id;
+          const visibleCards = section.querySelectorAll<HTMLElement>(
+            ".card-personal:not([style*='display: none'])",
+          );
+
+          if (activeTeam === "all") {
+            // City-only filter: hide empty sections
+            section.style.display = visibleCards.length > 0 ? "" : "none";
+          } else {
+            // Team filter active: show only the selected team’s section
+            section.style.display = sectionId === activeTeam ? "" : "none";
+          }
+        });
     }
 
-    // Run once on load
-    updateTeams();
+    function setActive(button: HTMLElement, groupSelector: string) {
+      document.querySelectorAll<HTMLElement>(groupSelector).forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      button.classList.add("active");
+    }
 
-    // Run whenever the selection changes
-    selector.addEventListener("change", updateTeams);
+    // Team buttons
+    document.querySelectorAll<HTMLElement>("[id^='team_']").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        activeTeam = btn.id.replace("team_", "");
+        setActive(btn, "[id^='team_']");
+        filterCards();
+      });
+    });
+
+    // City buttons
+    document.querySelectorAll<HTMLElement>("[id^='city_']").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        activeCity = btn.id.replace("city_", "");
+        setActive(btn, "[id^='city_']");
+        filterCards();
+      });
+    });
+
+    // Initialize defaults
+    (document.getElementById("team_all") as HTMLElement)?.classList.add(
+      "active",
+    );
+    (document.getElementById("city_all") as HTMLElement)?.classList.add(
+      "active",
+    );
+
+    filterCards(); // run once on load
   });
 </script>
