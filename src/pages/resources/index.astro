@@ -1,0 +1,135 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="bg-white py-6 mt-20">
+    <div class="text-center">
+      <span
+      class="text-trbBlue text-center text-[2.5rem] pt-4 mb-6 font-merriweather"
+      ><b>Resources</b></span
+      >
+    </div>
+    <div class="text-center text-[1.5rem] mb-[4rem]">
+      <span>
+        Discover our expert analysis on market conditions and wealth strategies
+      </span>
+    </div>
+    <div class="w-[90%] max-w-5xl mx-auto">
+      <div class="mb-[3rem]">
+        <div class="panel-container py-[2rem] flex-col">
+          <div class="md:max-w-2xl rounded-[1rem] overflow-hidden">
+            <img src="/trb/resources/hero-1.png" />
+          </div>
+          <div class="self-start h-full py-2">
+            <div class="mx-auto w-[90%] md:max-w-xl h-full flex flex-col">
+              <div>
+                <a href="/trb/resources/weekly-market-update">
+                  <h2>Weekly Market Update</h2>
+                </a>
+                <p class="opacity-60">Friday, August 29, 20205</p>
+              </div>
+              <p>
+                This week we get a look at Q2 GDP results, and also the Fed's
+                preferred inflation reading, PCE. Read to learn how these are
+                affecting our thinkinga and potential rate cut projections.
+              </p>
+              <div class="invisible grow"></div>
+              <div class="mb-1">
+                <div class="flex gap-4 items-center">
+                  <div class="max-w-12 border-0 rounded-[50%] overflow-clip">
+                    <img
+                      src="/trb/people/Trey-Willerson.jpg"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <p class="!mb-0">
+                    Trey Willerson, CFA
+                    <br />
+                    <i>Chief Investment Officer</i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-container py-[2rem] flex-col">
+          <div class="md:max-w-2xl rounded-[1rem] overflow-hidden">
+            <img src="/trb/resources/hero-2.png" />
+          </div>
+          <div class="self-start h-full py-2">
+            <div class="mx-auto w-[90%] md:max-w-xl h-full flex flex-col">
+              <div>
+                <a href="/trb/resources/wealth-blog">
+                  <h2>Wealth Blog</h2>
+                </a>
+                <p class="opacity-60">Monday, August 25, 2025</p>
+              </div>
+              <p>
+                How beautiful is the One Big Beautiful Bill? Read as our experts
+                outline the major provision of the president's landmark tax
+                legislation and how it can effect your financial plan.
+              </p>
+              <div class="invisible grow"></div>
+              <div class="mb-1">
+                <div class="flex gap-4 items-center">
+                  <div class="max-w-12 border-0 rounded-[50%] overflow-clip">
+                    <img
+                      src="/trb/people/Peyton-Stamper.jpg"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <p class="!mb-0">
+                    Peyton Stamper, CPA, CFP&REG;
+                    <br />
+                    <i>Wealth Management Advisor</i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  a {
+    transition: all 0.25s ease-in-out;
+  }
+  a:hover h2 {
+    color: #327ebc;
+  }
+
+  p {
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+    word-break: break-word;
+  }
+  .panel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h2 {
+    line-height: 1.25;
+    font-size: 1.75rem;
+    color: var(--color-trbBrown);
+    margin: 0 0 0.75rem;
+    font-family: "merriweather", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    padding-top: 1rem;
+  }
+  @media (min-width: 48rem) {
+    h2 {
+      padding-top: 0;
+    }
+
+    .panel-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+</style>

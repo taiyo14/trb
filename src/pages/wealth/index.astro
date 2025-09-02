@@ -194,7 +194,14 @@ import Link1 from "@/components/Link1.astro";
                 </div>
               </div>
               <div id="resources" class="max-w-[90%] mx-auto py-[3rem]">
-                <h2 class="text-center mx-auto">Resources</h2>
+                <a href="/trb/resources">
+                  <h2 class="text-center mx-auto">Resources</h2>
+                </a>
+                <div class="text-center mb-6">
+                  <span class="text-[1.5rem]">
+                    Discover our expert analysis on market conditions and wealth strategies
+                  </span>
+                </div>
                 <div
                   class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-2"
                 >
@@ -207,7 +214,9 @@ import Link1 from "@/components/Link1.astro";
                     </div>
                     <div class="card-content">
                       <p class="opacity-60">Friday, August 29, 2025</p>
-                      <h5>Weekly Market Update</h5>
+                      <a href="/trb/resources/weekly-market-update">
+                        <h5>Weekly Market Update</h5>
+                      </a>
                       <p class="!mb-0">
                         This week we get a look at Q2 GDP results, and also the
                         Fed's preferred inflation reading, PCE. Read to learn
@@ -244,7 +253,9 @@ import Link1 from "@/components/Link1.astro";
                     </div>
                     <div class="card-content">
                       <p class="opacity-60">Monday, August 25, 2025</p>
-                      <h5>Wealth Blog</h5>
+                      <a href="/trb/resources/wealth-blog">
+                        <h5>Wealth Blog</h5>
+                      </a>
                       <p class="!mb-0">
                         How beautiful is the One Big Beautiful Bill? Read as our
                         experts outline the major provision of the president's
@@ -320,12 +331,19 @@ import Link1 from "@/components/Link1.astro";
     padding-top: 1rem;
   }
 
+  a:hover h2 {
+    color: #327ebc;
+  }
+
   h5 {
     line-height: 1.25;
     font-size: 1.25rem;
-    color: var(--color-trbBlue);
+    color: var(--color-trbBrown);
     font-family: "merriweather", Helvetica, Arial, sans-serif;
     margin-bottom: 1.5rem;
+  }
+  a:hover h5 {
+    color: #327ebc;
   }
 
   #footer {
