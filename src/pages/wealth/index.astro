@@ -40,8 +40,9 @@ import Link1 from "@/components/Link1.astro";
                       <Link1 href="/trb/team" class="!m-[0_0_0_1.5rem]"
                         >Meet Our Team</Link1
                       >
-                      <Link1 href="/trb/wealth#contact" class="!m-[0_0_0_1.5rem]"
-                        >Contact Us</Link1
+                      <Link1
+                        href="/trb/wealth#contact"
+                        class="!m-[0_0_0_1.5rem]">Contact Us</Link1
                       >
                     </div>
                   </div>
@@ -204,27 +205,31 @@ import Link1 from "@/components/Link1.astro";
                 <div
                   class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-2"
                 >
-                  <div class="card-personal">
-                    <div>
-                      <img
-                        src="/trb/resources/hero-1.png"
-                        class="object-contain w-full"
-                      />
-                    </div>
-                    <div class="card-content">
-                      <p class="opacity-60">Friday, August 29, 2025</p>
-                      <a href="/trb/resources/weekly-market-update">
+                  <a href="/trb/resources/weekly-market-update" class="block">
+                    <div
+                      class="card-personal group relative cursor-pointer h-full grid grid-rows-[auto_1fr_auto]"
+                    >
+                      <div
+                        class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      >
+                      </div>
+                      <div>
+                        <img
+                          src="/trb/resources/hero-1.png"
+                          class="object-contain w-full"
+                        />
+                      </div>
+                      <div class="card-content">
+                        <p class="opacity-60">Friday, August 29, 2025</p>
                         <h5>Weekly Market Update</h5>
-                      </a>
-                      <p class="!mb-0">
-                        This week we get a look at Q2 GDP results, and also the
-                        Fed's preferred inflation reading, PCE. Read to learn
-                        how these are affecting our thinking and potential rate
-                        cut projections.
-                      </p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="card-footer w-[90%] px-[2rem] pb-[2rem]">
+                        <p class="!mb-0">
+                          This week we get a look at Q2 GDP results, and also
+                          the Fed's preferred inflation reading, PCE. Read to
+                          learn how these are affecting our thinking and
+                          potential rate cut projections.
+                        </p>
+                      </div>
+                      <div class="card-footer px-[2rem] pb-[2rem]">
                         <div class="flex gap-4 items-center">
                           <div
                             class="max-w-12 border-0 rounded-[50%] overflow-clip"
@@ -242,44 +247,52 @@ import Link1 from "@/components/Link1.astro";
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="card-personal">
-                    <div>
-                      <img
-                        src="/trb/resources/hero-2.png"
-                        class="object-contain w-full"
-                      />
-                    </div>
-                    <div class="card-content">
-                      <p class="opacity-60">Monday, August 25, 2025</p>
-                      <a href="/trb/resources/wealth-blog">
+                  </a>
+                  <a href="/trb/resources/wealth-blog" class="block">
+                    <div
+                      class="card-personal group relative cursor-pointer h-full grid grid-rows-[auto_1fr_auto]"
+                    >
+                      <div
+                        class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      >
+                      </div>
+                      <div>
+                        <img
+                          src="/trb/resources/hero-2.png"
+                          class="object-contain w-full"
+                        />
+                      </div>
+                      <div class="card-content">
+                        <p class="opacity-60">Monday, August 25, 2025</p>
                         <h5>Wealth Blog</h5>
-                      </a>
-                      <p class="!mb-0">
-                        How beautiful is the One Big Beautiful Bill? Read as our
-                        experts outline the major provision of the president's
-                        landmark tax legislation and how it can effect your
-                        financial plan.
-                      </p>
-                    </div>
-                    <div class="card-footer w-[90%] px-[2rem] pb-[2rem]">
-                      <div class="flex gap-4 items-center">
-                        <div
-                          class="max-w-12 border-0 rounded-[50%] overflow-clip"
-                        >
-                          <img
-                            src="/trb/people/Peyton-Stamper.jpg"
-                            class="w-full h-full object-contain"
-                          />
-                        </div>
                         <p class="!mb-0">
-                          Peyton Stamper, CPA, CFP&REG;
-                          <br />
-                          <i>Wealth Management Advisor</i>
+                          How beautiful is the One Big Beautiful Bill? Read as
+                          our experts outline the major provision of the
+                          president's landmark tax legislation and how it can
+                          effect your financial plan.
                         </p>
                       </div>
+                      <div
+                        class="card-footer px-[2rem] pb-[2rem]"
+                      >
+                        <div class="flex gap-4 items-center">
+                          <div
+                            class="max-w-12 border-0 rounded-[50%] overflow-clip"
+                          >
+                            <img
+                              src="/trb/people/Peyton-Stamper.jpg"
+                              class="w-full h-full object-contain"
+                            />
+                          </div>
+                          <p class="!mb-0">
+                            Peyton Stamper, CPA, CFP&REG;
+                            <br />
+                            <i>Wealth Management Advisor</i>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div id="contact" class="max-w-[90%] mx-auto py-[3rem]">
@@ -322,18 +335,27 @@ import Link1 from "@/components/Link1.astro";
                   </div>
                 </div>
               </div>
-              <div id="disclose" class="max-w-[90%] mx-auto py-[3rem] text-[1.2rem] leading-[1.5] mb-[1.5rem] opacity-70 font-lato">
+              <div
+                id="disclose"
+                class="max-w-[90%] mx-auto py-[3rem] text-[1.2rem] leading-[1.5] mb-[1.5rem] opacity-70 font-lato"
+              >
                 <p>
-                  INVESTMENT AND INSURANCE PRODUCTS ARE NOT A DEPOSIT / NOT FDIC INSURED / MAY LOSE VALUE / NOT BANK GURANTEED / NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY.
+                  INVESTMENT AND INSURANCE PRODUCTS ARE NOT A DEPOSIT / NOT FDIC
+                  INSURED / MAY LOSE VALUE / NOT BANK GURANTEED / NOT INSURED BY
+                  ANY FEDERAL GOVERNMENT AGENCY.
                 </p>
                 <p>
-                  TRB Wealth Management, LLC is a Registered Investment Advisor with the Securities and Exchange Commission
+                  TRB Wealth Management, LLC is a Registered Investment Advisor
+                  with the Securities and Exchange Commission
                 </p>
+                <p>Form CRS | Form ADV | Advisor Info</p>
                 <p>
-                  Form CRS | Form ADV | Advisor Info
-                </p>
-                <p>
-                  TRB Wealth Management, LLC does business in the name of TRB Trust and Wealth Management. Trust and Family Office services offered exclusively through Texas Regional Bank. The trust department of Texas Regional Bank has engaged TRB Wealth Management, LLC to provide investment advice to Texas Regional Bank for trust department accounts.
+                  TRB Wealth Management, LLC does business in the name of TRB
+                  Trust and Wealth Management. Trust and Family Office services
+                  offered exclusively through Texas Regional Bank. The trust
+                  department of Texas Regional Bank has engaged TRB Wealth
+                  Management, LLC to provide investment advice to Texas Regional
+                  Bank for trust department accounts.
                 </p>
               </div>
             </div>

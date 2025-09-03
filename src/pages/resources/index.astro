@@ -6,8 +6,8 @@ import Layout from "@/layouts/Layout.astro";
   <div class="bg-white py-6 mt-20">
     <div class="text-center">
       <span
-      class="text-trbBlue text-center text-[2.5rem] pt-4 mb-6 font-merriweather"
-      ><b>Resources</b></span
+        class="text-trbBlue text-center text-[2.5rem] pt-4 mb-6 font-merriweather"
+        ><b>Resources</b></span
       >
     </div>
     <div class="text-center text-[1.5rem] mb-[4rem]">
@@ -17,78 +17,87 @@ import Layout from "@/layouts/Layout.astro";
     </div>
     <div class="w-[90%] max-w-5xl mx-auto">
       <div class="mb-[3rem]">
-        <div class="panel-container py-[2rem] flex-col">
-          <div class="md:max-w-2xl rounded-[1rem] overflow-hidden">
-            <img src="/trb/resources/hero-1.png" />
-          </div>
-          <div class="self-start h-full py-2">
-            <div class="mx-auto w-[90%] md:max-w-xl h-full flex flex-col">
-              <div>
-                <a href="/trb/resources/weekly-market-update">
+        <a href="/trb/resources/weekly-market-update">
+          <div class="panel-container flex-col group relative cursor-pointer">
+            <div
+              class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+            </div>
+            <div class="md:max-w-2xl rounded-[1rem] overflow-hidden">
+              <img src="/trb/resources/hero-1.png" />
+            </div>
+            <div class="self-start h-full py-2">
+              <div class="mx-auto w-[90%] md:max-w-xl h-full flex flex-col">
+                <div>
                   <h2>Weekly Market Update</h2>
-                </a>
-                <p class="opacity-60">Friday, August 29, 20205</p>
-              </div>
-              <p>
-                This week we get a look at Q2 GDP results, and also the Fed's
-                preferred inflation reading, PCE. Read to learn how these are
-                affecting our thinkinga and potential rate cut projections.
-              </p>
-              <div class="invisible grow"></div>
-              <div class="mb-1">
-                <div class="flex gap-4 items-center">
-                  <div class="max-w-12 border-0 rounded-[50%] overflow-clip">
-                    <img
-                      src="/trb/people/Trey-Willerson.jpg"
-                      class="w-full h-full object-contain"
-                    />
+                  <p class="opacity-60">Friday, August 29, 20205</p>
+                </div>
+                <p>
+                  This week we get a look at Q2 GDP results, and also the Fed's
+                  preferred inflation reading, PCE. Read to learn how these are
+                  affecting our thinkinga and potential rate cut projections.
+                </p>
+                <div class="invisible grow"></div>
+                <div class="mb-1">
+                  <div class="flex gap-4 items-center">
+                    <div class="max-w-12 border-0 rounded-[50%] overflow-clip">
+                      <img
+                        src="/trb/people/Trey-Willerson.jpg"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p class="!mb-0">
+                      Trey Willerson, CFA
+                      <br />
+                      <i>Chief Investment Officer</i>
+                    </p>
                   </div>
-                  <p class="!mb-0">
-                    Trey Willerson, CFA
-                    <br />
-                    <i>Chief Investment Officer</i>
-                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="panel-container py-[2rem] flex-col">
-          <div class="md:max-w-2xl rounded-[1rem] overflow-hidden">
-            <img src="/trb/resources/hero-2.png" />
-          </div>
-          <div class="self-start h-full py-2">
-            <div class="mx-auto w-[90%] md:max-w-xl h-full flex flex-col">
-              <div>
-                <a href="/trb/resources/wealth-blog">
+        </a>
+        <a href="/trb/resources/wealth-blog">
+          <div class="panel-container flex-col group relative cursor-pointer">
+            <div
+              class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+            </div>
+            <div class="md:max-w-2xl rounded-[1rem] overflow-hidden">
+              <img src="/trb/resources/hero-2.png" />
+            </div>
+            <div class="self-start h-full py-2">
+              <div class="mx-auto w-[90%] md:max-w-xl h-full flex flex-col">
+                <div>
                   <h2>Wealth Blog</h2>
-                </a>
-                <p class="opacity-60">Monday, August 25, 2025</p>
-              </div>
-              <p>
-                How beautiful is the One Big Beautiful Bill? Read as our experts
-                outline the major provision of the president's landmark tax
-                legislation and how it can effect your financial plan.
-              </p>
-              <div class="invisible grow"></div>
-              <div class="mb-1">
-                <div class="flex gap-4 items-center">
-                  <div class="max-w-12 border-0 rounded-[50%] overflow-clip">
-                    <img
-                      src="/trb/people/Peyton-Stamper.jpg"
-                      class="w-full h-full object-contain"
-                    />
+                  <p class="opacity-60">Monday, August 25, 2025</p>
+                </div>
+                <p>
+                  How beautiful is the One Big Beautiful Bill? Read as our
+                  experts outline the major provision of the president's
+                  landmark tax legislation and how it can effect your financial
+                  plan.
+                </p>
+                <div class="invisible grow"></div>
+                <div class="mb-1">
+                  <div class="flex gap-4 items-center">
+                    <div class="max-w-12 border-0 rounded-[50%] overflow-clip">
+                      <img
+                        src="/trb/people/Peyton-Stamper.jpg"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p class="!mb-0">
+                      Peyton Stamper, CPA, CFP&REG;
+                      <br />
+                      <i>Wealth Management Advisor</i>
+                    </p>
                   </div>
-                  <p class="!mb-0">
-                    Peyton Stamper, CPA, CFP&REG;
-                    <br />
-                    <i>Wealth Management Advisor</i>
-                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -111,6 +120,8 @@ import Layout from "@/layouts/Layout.astro";
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem 0;
+    margin: 0 0;
   }
   h2 {
     line-height: 1.25;
@@ -130,6 +141,8 @@ import Layout from "@/layouts/Layout.astro";
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: calc(var(--spacing) * 10);
+      padding: 0 0;
+      margin: 2rem 0;
     }
   }
 </style>
