@@ -1,34 +1,32 @@
 ---
+import Link2 from "@/components/Link2.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout>
   <main class="mt-20">
-    <div class="py-6 bg-white">
-      <div class="max-w-[90%] mx-auto">
-        <div class="grid justify-center">
-          <div class="flex justify-center">
-            <div class="h-96 mx-auto" style="view-transition-name: img;">
-              <img
-                src="/trb/people/Ben-Fedorko.jpg"
-                class="max-h-full max-w-full object-contain"
-              />
-            </div>
+    <div class="py-16 bg-white">
+      <div class="w-[90%] max-w-[1280px] mx-auto">
+        <div class="grid sm:grid-cols-[30%_1fr] gap-10">
+          <div>
+            <img
+              src="/trb/people/Ben-Fedorko.jpg"
+              class="max-h-full max-w-full object-contain"
+            />
           </div>
-          <div class="pt-[3rem] pb-[1rem] text-center">
-            <h3>
-              <b>Ben A. Fredorko</b>
+          <div>
+            <h3 class="leading-[1.5] text-trbBrown text-3xl sm:text-[2.4rem]">
+              Ben A. Fredorko
             </h3>
-          </div>
-          <p class="mb-[0.7rem] text-center text-xl">
-            <i>President</i>, TRB Trust & Wealth Management
-            <br />
-            Houston, Texas
-            <br />
-            <a id="phone_num" href="tel:7134249558"> (713) 424-9558 </a>
-          </p>
-          <p class="max-w-2xl py-6 text-lg">
-            I am currently the President of the Trust & Wealth Management
+            <p class="md:my-[2rem] my-[1.2rem] text-xl leading-[1.6]">
+              <i>President</i>, TRB Trust & Wealth Management
+              <br />
+              Houston, Texas
+              <br />
+              <a id="phone_num" href="tel:7134249558"> (713) 424-9558 </a>
+            </p>
+            <p class="py-6 text-xl font-lato leading-[1.8]">
+              I am currently the President of the Trust & Wealth Management
             Division at Texas Regional Bank, a privately held bank in Texas. At
             TRB Trust & Wealth Management, we are focused on providing
             comprehensive and customized solutions for high-net-worth clients.
@@ -55,7 +53,11 @@ import Layout from "@/layouts/Layout.astro";
             with my wife and three young children, ideally in the mountains in Colorado,
             or playing golf. We are active members at Memorial Drive Presbyterian
             Church in Houston.
-          </p>
+            </p>
+          </div>
+        </div>
+        <div class="mt-[3rem] max-w-[160px]">
+            <Link2 href="/trb/team">Return&nbsp;to&nbsp;team</Link2>
         </div>
       </div>
     </div>
@@ -63,16 +65,11 @@ import Layout from "@/layouts/Layout.astro";
 </Layout>
 
 <style>
-  .card-title {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: var(--color-trbBrown);
-    text-align: center;
+  a {
+    color: var(--color-trbBlue);
+    transition: all 0.25s ease-in-out;
   }
-
-  h3 {
-    font-size: 1.875rem;
-    line-height: 1.5;
-    color: var(--color-trbBrown);
+  a:hover {
+    color: #327ebc;
   }
 </style>

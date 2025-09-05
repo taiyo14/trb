@@ -22,7 +22,7 @@ import Footer from "@/components/Footer.astro"
               <button id="team_wealth_management"
                 >Wealth Management Advisors</button
               >
-              <button id="team_trust_officer">Trust Officer</button>
+              <button id="team_trust_officers">Trust Officers</button>
               <button id="team_operations"
                 >Operations and Administrative Staff</button
               >
@@ -354,16 +354,16 @@ import Footer from "@/components/Footer.astro"
             </div>
           </div>
         </div>
-        <div id="trust_officer">
+        <div id="trust_officers">
           <div class="pt-[5rem] pb-[1rem]">
-            <h2><b>Trust Officer</b></h2>
+            <h2><b>Trust Officers</b></h2>
           </div>
           <div
             class="grid mx-auto gap-10 w-[90%] max-w-6xl sm:justify-center sm:grid-cols-3"
           >
             <div
               class="card-personal"
-              data-team="trust_officer"
+              data-team="trust_officers"
               data-city="mcallen"
             >
               <div>
@@ -385,7 +385,7 @@ import Footer from "@/components/Footer.astro"
             </div>
             <div
               class="card-personal"
-              data-team="trust_officer"
+              data-team="trust_officers"
               data-city="mcallen"
             >
               <div>
@@ -407,7 +407,7 @@ import Footer from "@/components/Footer.astro"
             </div>
             <div
               class="card-personal"
-              data-team="trust_officer"
+              data-team="trust_officers"
               data-city="houston"
             >
               <div>
@@ -434,7 +434,7 @@ import Footer from "@/components/Footer.astro"
             <div
               class="card-personal"
               style="grid-column-start: 2;"
-              data-team="trust_officer"
+              data-team="trust_officers"
               data-city="mcallen"
             >
               <div>
@@ -736,7 +736,7 @@ import Footer from "@/components/Footer.astro"
       // Section visibility logic
       document
         .querySelectorAll<HTMLElement>(
-          "#executive, #wealth_strategist, #wealth_management, #trust_officer, #operations",
+          "#executive, #wealth_strategist, #wealth_management, #trust_officers, #operations",
         )
         .forEach((section) => {
           const sectionId = section.id;
